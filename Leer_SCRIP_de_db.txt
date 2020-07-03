@@ -1,0 +1,19 @@
+
+create database dbservicios
+
+CREATE TABLE tbl_usuario (
+  id INT NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(25) NOT NULL,
+  pass BLOB NULL,
+  nombre VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id));
+
+
+create table tbl_registro (
+    id_registro int not null AUTO_INCREMENT,
+    tipo_peticion varchar (20),
+    asunto varchar (60) not null,
+    estado varchar (20) not null,
+    fecha_creacion TIMESTAMP,
+    fecha_limite DATE,
+    PRIMARY KEY (id_registro));
